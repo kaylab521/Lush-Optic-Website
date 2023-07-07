@@ -83,15 +83,16 @@ a {
 }
 /*GRID*/
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     justify-content: center;
-    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .card img {
     filter: brightness(90%);
-    width: 100%;
-    height: 400px;
+    width: 375px;
+    height: 375px;
 }
 .namePrice {
     display: flex;
@@ -256,7 +257,7 @@ footer a:hover {
     }
     .container img {
         margin-bottom: 0px;
-        width: auto;
-        height: auto;
+        width: 400px;
+        height: 400px;
     }
 }
