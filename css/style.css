@@ -60,14 +60,37 @@ ul {
 }
 #nav a:hover {
     cursor: pointer;
-    border-bottom: #000;
-}
-li:hover {
-    font-weight: bold;
     border-bottom: 1px solid #000;
 }
+/*li:hover {
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}*/
 a {
     text-decoration: none;
+}
+.dropdown-menu {
+    display: none;
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    color: #000;
+    margin: 16px;
+}
+.dropdown:hover #arrow {
+    transform: rotate(90deg);
+}
+.dropdown-menu li {
+    margin: 8px 16px;
+}
+#arrow {
+    margin-left: 4px;
 }
 
 /*HERO*/

@@ -5,17 +5,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <script scr="index.js"></script>
 </head>
-
 <body>
     <section id="nav">
-        <h1><a src="index.html"></a>Lush Optic</a></h1>
-        <ul>
-          <li><a href="index.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <h1><a src="index.html"></a>Lush Optic</a></h1>
+      <ul>
+        <li><a href="index.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown"><a href="shop.html">Shop<i class="fa fa-angle-right" id="arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li>Paintings</li>
+            <li>Prints</li>
+            <li>More</li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </section>
     <div id="hero">
         <h1>Lush Optic Store</h1>

@@ -3,8 +3,9 @@
   <head>
     <title>Lush Optic Website</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="nav">
@@ -12,7 +13,13 @@
       <ul>
         <li><a href="index.html">Gallery</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li class="dropdown"><a href="shop.html">Shop<i class="fa fa-angle-right" id="arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li>Paintings</li>
+            <li>Prints</li>
+            <li>More</li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
@@ -62,6 +69,9 @@
           <a><img src="images/socials/Brands/instagram.png" id="social"></a>
           <a><img src="images/socials/Brands/facebook.png" id="social"></a>
           <a><img src="images/socials/Communication/message.png" id="social"></a>
+        </div>
+        <div class="social-links">
+          <i class="fa fa-facebook"></i>
         </div>
       </div>
       <div class="slogan">

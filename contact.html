@@ -5,15 +5,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <script src="js/index.js"></script>
   </head>
   <body>
-    <script src="js/index.js"></script>
     <section id="nav">
       <h1><a src="index.html"></a>Lush Optic</a></h1>
       <ul>
         <li><a href="index.html">Gallery</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li class="dropdown"><a href="shop.html">Shop<i class="fa fa-angle-right" id="arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li>Paintings</li>
+            <li>Prints</li>
+            <li>More</li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
@@ -23,24 +29,22 @@
     <section>
       <h1>Contact Lush Optic</h1>
       <p>For commission requests and event bookings, please fill out the forms below.</p>
-      <button class="open-button" onclick="openForm(commissions)">Commission a Painting</button>
-      <button class="open-button" onclick="openForm(bookings)">Book for an Event</button>
-      
+      <div class="form-btns">
+        <button class="open-button" onclick="openForm(commission)" id="commission-btn">Commission a Painting</button>
+        <button class="open-button" onclick="openForm(bookings)" id="book-btn">Book for an Event</button>
+      </div>
       <div class="forms">
-        <div class="form-popup" id="commissions">
+        <div class="form-popup" id="commission">
           <h3>Commission a painting</h3>
           <form>
             <label>Name</label>
             <div id="Name">
               <input type="text" placeholder="First Name" Required> <input type="text" placeholder="Last Name" required>
             </div>
-              
             <label>Email</label>
-            <input type="text" required>
-              
+            <input type="text" required> 
             <label>Phone Number</label>
-            <input type="number" required>
-              
+            <input type="number" required>  
             <label>Preferred Contact Method</label>
             <div id="contact-method">
               <label>
@@ -53,7 +57,6 @@
                 <input type="checkbox">Text
               </label>
             </div>
-              
             <label>Select Canvas Size</label>
             <select id="canvas-size">
               <option vaue="size 0">Select</option>
@@ -62,16 +65,12 @@
               <option value="size 3">3</option>
               <option value="size 4">4</option>
             </select>
-  
             <label>Colors</label>
             <input type="text">
-  
             <label>Deadline</label>
             <input type="date">
-  
             <label>Additional Comments/Message</label>
             <textarea></textarea>
-  
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -83,16 +82,12 @@
             <div id="Name">
               <input type="text" placeholder="First Name" Required> <input type="text" placeholder="Last Name" required>
             </div>
-  
             <label>Name of Organization</label>
             <input type="text">
-              
             <label>Email</label>
             <input type="text" required>
-              
             <label>Phone Number</label>
             <input type="number" required>
-              
             <label>Preferred Contact Method</label>
             <div id="contact-method">
               <label>
@@ -105,16 +100,12 @@
                 <input type="checkbox">Text
               </label>
             </div>
-  
             <label>Date of Event</label>
             <input type="date">
-  
             <label>Description of Event</label>
             <input type="text">
-  
             <label>Additional Comments/Message</label>
             <textarea></textarea>
-  
             <button type="submit">Submit</button>
           </form>
         </div>
