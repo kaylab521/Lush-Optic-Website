@@ -236,7 +236,11 @@ footer .logo {
     justify-content: flex-start;
     flex-direction: column;
 }
-#social {
+.social a {
+    height: 24px;
+    width: 24px;
+}
+.social-links i {
     height: 24px;
     width: 24px;
 }
